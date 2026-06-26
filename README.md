@@ -47,37 +47,37 @@ and business insights using PostgreSQL.
 ##  Key Findings
 
 ### Q1: Regional Sales
-[View Results](Results/Q1_regional_sales)
+[View Results](Results/Q1_regional_sales.csv)
 
 ### Q2: Category Profitability
-[View Results](Results/Q2_category_profit)
+[View Results](Results/Q2_category_profit.csv)
 
 ### Q5: Top 10 Customers
-[View Results](Results/Q5_top_customers)
+[View Results](Results/Q5_top_customers.csv)
 
 ### Q6: Customer Segments
-[View Results](Results/Q6_customer_segments)
+[View Results](Results/Q6_customer_segments.csv)
 
 ### Q7: Top 5 Cities by Profit
-[View Results](Results/Q7_top_cities_profit)
+[View Results](Results/Q7_top_cities_profit.csv)
 
 ### Q8: Top 5 Loss Making Cities
- [View Results](Results/Q8_loss_cities)
+ [View Results](Results/Q8_loss_cities.csv)
 
 ### Q10: Discount Impact on Profit
-[View Results](Results/Q10_discount_impact)
+[View Results](Results/Q10_discount_impact.csv)
 
 ### Q11: Region Profit Ranking
-[View Results](Results/Q11_region_rank)
+[View Results](Results/Q11_region_rank.csv)
 
 ### Q13: Year Over Year Sales
-[View Results](Results/Q13_yoy_sales)
+[View Results](Results/Q13_yoy_sales.csv)
 
 ### Q14: Average Order Value
-[View Results](Results/Q14_avg_order_values)
+[View Results](Results/Q14_avg_order_values.csv)
 
 ### Q15: Ship Mode Preference
-[View Results](Results/Q15_ship_mode)
+[View Results](Results/Q15_ship_mode.csv)
 
 ---
 ## Business Recommendations
