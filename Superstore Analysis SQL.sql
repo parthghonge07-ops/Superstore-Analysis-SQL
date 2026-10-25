@@ -77,21 +77,23 @@ from sales
 group by region;
 
 --Q12:Running total of monthly sales
-select year,month,sales,round(sum(sales) over(partition by year order by month)::numeric,2) as monthly_running_total
-from
-(select extract(year from order_date) as year,extract(month from order_date) as month,
+with cte as (select extract(year from order_date) as year,extract(month from order_date) as month,
 round(sum(sales)::numeric,2) as sales
 from sales
 group by year,month
 order by year asc,month asc);
 
+select year,month,sales,round(sum(sales) over(partition by year order by month)::numeric,2) as monthly_running_total
+from cte
+
+
 --Q13:Year over year sales comparison
-select year,sales,round(lag(sales) over(order by year asc),2) as previous_year
-from 
-(select extract(year from order_date) as year,
+with cte as (select extract(year from order_date) as year,
 round(sum(sales)::numeric,2) as sales from sales
 group by year);
 
+select year,sales,round(lag(sales) over(order by year asc),2) as previous_year
+from cte
 --Q14:Average order value by segment
 select segment,round(avg(sales)::numeric,2) as avg_order_value from sales
 group by segment
